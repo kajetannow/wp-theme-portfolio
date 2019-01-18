@@ -1,0 +1,316 @@
+/*
+Theme Name: Portfolio
+Theme URI: kajetannow.5v.pl
+Description: Projekt Szablonu przygotowywany na Witryny i Aplikacje Komputerowe.
+Version: 1.2
+Author: Kajetan Nowak
+Author URI: kajetannow.github.io
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Lato;
+	color: #707070;
+	background-color: #171717;
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+:link, :visited{
+	text-decoration: none;
+	color: inherit;
+}
+
+h1{
+	color: #F1F1F1;
+	font-size: 8.5vmin;
+}
+h2{
+	color: #F1F1F1;
+	font-size: 3.25vmin;
+	font-weight: 400;
+	font-style: italic;
+}
+p{
+	color: #F1F1F1;
+	font-size: 2.65vmin;
+}
+#surname{
+	font-family: "Grand Hotel";
+	font-size: 10vmin;
+	color: #F1F1F1;
+    z-index: 123;
+    position: fixed;
+    grid-row: 1;
+    grid-column: 1 / 3;
+    padding-left: 3%;
+}
+#container{
+	width: 100vw;
+    min-height: 100vh;
+    height: inherit;
+    display: grid;
+    grid-gap: 0;
+    background-image: none;
+}
+
+ul a:active, ul a:hover{
+    font-weight: 700;
+	}
+	
+
+    li{
+        list-style-type: none;
+       
+    }
+
+    nav ul li{
+        transform:rotate(90deg);
+        margin-top: 13vh;
+        padding-left: 40%;
+        font-style: italic;
+        font-size: 4vmin;
+        font-weight: 300;
+    }
+    
+    
+    #photographer{
+        display: none;
+    }
+    
+    #sign{
+        display: none;
+    }
+    
+    nav{
+        height: 90vh;
+        position: fixed;
+        text-align: center;
+        grid-column: 1;
+        z-index: 122;
+        width:10vw;
+    }
+    
+    section{
+        position: absolute;
+        display: block;
+        margin-left: 10vw;
+        margin-bottom: 10vh;
+        width: 80vw;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .descript{
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        padding-top: 10%;
+        padding-left: 1%;
+        padding-right: 5%;
+        height: 89%;
+        min-width: 25%;
+        max-width: 35%;
+        background-color: rgba(23,23,23,0.7);
+        z-index: 100;
+    
+    }
+    
+ .wp-post-image{
+        position: static;
+        display: inline-block;
+        float: left;
+        width: auto;
+        max-width: 90%;
+        height: auto;
+        max-height: 100vh;
+    } 
+
+
+section#about{
+	display: block;
+	width: 100vw;
+	height: auto;
+	min-height: 80vh;
+}
+
+#about-descript{
+    height: 100%;
+    margin-left: 50vw;
+	position: absolute;
+	right: 0;
+	float: left;
+	padding-top: 3%;
+	padding-left: 1%;
+	padding-right: 10%;
+	max-width: 40vw;
+	background-color: rgba(23,23,23,0.7);
+	z-index: 100;
+
+}
+
+section#about img{
+	overflow: hidden;
+	position: absolute;
+	float: left;
+	width: 100vh;
+	height: 100vh;
+	z-index: 10;
+}
+
+#logo{
+	width: 33vw;
+}
+
+li.post-meta{
+    transform:rotate(-90deg);
+}
+
+#background{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+div#background img.wp-post-image{
+    min-height: 100vh;
+    max-width: initial;
+    width: initial;
+    overflow: hidden;
+}
+
+
+button#menuIcon, button#closeMenu{
+    display: none;
+}
+
+#credits{
+    position: relative;
+    text-align: center;
+}
+
+p a{
+    font-style: italic;
+}
+p a:hover{
+    color: #707070;
+}
+
+.more{
+    font-size: 2.65vmin;
+    line-height: 200%;
+}
+
+.content{
+    float: left;
+    position: static;
+    padding-top: 1%;
+    height: auto;
+    width: 70%;
+    background-color: rgba(23,23,23,0.7);
+    margin: 3vmin;
+}
+
+.content h1, .content h2{
+    padding-bottom: 2vmin;
+}
+
+.content p{
+    text-align: justify;
+}
+
+
+@keyframes catIn{
+    from{
+        opacity: 0;
+        margin-left: -30vw;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0vw;
+    }
+}
+
+@keyframes catOut{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        margin-left: 30vw;
+    }
+}
+
+.catThumbs{
+    position: absolute;
+    opacity: 0;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    width: 20vw;
+    height: 20vw;
+    margin-left: 0vw;
+    overflow: hidden;
+}
+
+.catThumbs .wp-post-image{
+    position: static;
+    width: initial;
+    height: 20vw;
+}
+
+#cat{
+    margin-left: 10vw;
+    width: 90vmin;
+    display: grid;
+    grid-auto-columns: 30vw 30vw 30vw;
+}
+
+#portrait{
+    grid-column: 1;
+}
+#travel{
+    grid-column: 2;
+}
+#street{
+    grid-column: 3;
+}
+
+#sidemainmenu li, #bottommainmenu li{
+    margin-left: 5vh;
+    margin-top: 13vh;
+    font-style: italic;
+    font-size: 4vmin;
+    font-weight: 300;
+}
+
+#sidemainmenu, #bottommainmenu{
+z-index: 123;
+position: absolute;
+}
+
+#bottommainmenu li{
+    display: inline-block;
+}
+#bottommainmenu{
+    bottom: 10vmin;
+    right: 13vmin;
+}
+
+#sidemainmenu li{
+    margin-left: 12vh;
+}
+
+#sidemainmenu li:first-child{
+    margin-top: 20vh;
+}
+
+

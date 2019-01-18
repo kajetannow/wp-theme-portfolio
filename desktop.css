@@ -1,0 +1,101 @@
+@keyframes sectionInLeft{
+    from{
+        opacity: 0;
+        margin-left: -100vw;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes sectionOutLeft{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        margin-left: 100vw;
+    }
+}
+
+@keyframes sectionInRight{
+    from{
+        opacity: 0;
+        margin-left: 100vw;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes sectionOutRight{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        margin-left: -100vw;
+    }
+}
+
+
+.descript{
+    animation-play-state: paused;
+    animation: 1s ease-in-out;
+    height: 90vh;
+    padding-top: 10vh;
+    
+}
+
+
+button#leftSlider, button#rightSlider{
+    display: initial;
+    position: fixed;
+    font-size: 10vmin;
+    height: 10vh;
+    width: auto;
+    font-family: Lato;
+    color: #F1F1F1;
+    font-weight: 800;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    z-index: 128;
+    top: 45vh;
+}
+
+button#leftSlider{
+    left: 8vmax;
+}
+
+button#rightSlider{
+    left: 90vmax;
+}
+
+
+
+section{
+    position: absolute;
+    opacity: 0;
+    margin-bottom: 0;
+    animation-play-state: paused;
+    animation-timing-function: ease-out;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+section#page{
+    opacity: 1;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wp-post-image{
+    max-width: 85vw;
+}
+
+div#background img.wp-post-image{
+    max-width: initial;
+}

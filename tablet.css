@@ -1,0 +1,55 @@
+section{
+    position: relative;
+    width: 90vw;
+    margin: 0;
+    min-height: 0;
+    margin-bottom: 10vh;
+    margin-left: 10%;
+}
+
+.descript {
+    float: left;
+    position: static;
+    padding-top: 1%;
+    height: auto;
+    min-width: 60%;
+    max-width: 80%;
+    background-color: rgba(23,23,23,0.7);
+    z-index: 100;
+}
+
+.content{
+    float: left;
+    position: static;
+    padding-top: 1%;
+    height: auto;
+    width: 80%;
+    background-color: rgba(23,23,23,0.7);
+    z-index: 100;
+}
+
+section img.wp-post-image{
+    margin-left: 0;
+    margin-top: 0;    
+    max-width: 100%;
+    height: auto;
+    position: static;
+    
+}
+
+button#leftSlider, button#rightSlider{
+    display: none;
+}
+
+.content p{
+    font-size: 3.25vmin;
+}
+
+#sidemainmenu li, #bottommainmenu li{
+    font-size: 3vmax;
+}
+
+div#background img.wp-post-image{
+    width: 100vmin;
+    min-height: initial;
+}
